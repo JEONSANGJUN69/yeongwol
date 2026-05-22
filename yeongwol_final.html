@@ -179,7 +179,7 @@ tr:hover td { background:var(--accent-pale); }
       <select id="town">
         <option value="">선택해 주세요</option>
         <option>영월읍</option><option>상동읍</option><option>한반도면</option>
-        <option>북면</option><option>남면</option><option>수주면</option>
+        <option>북면</option><option>남면</option><option>주천면</option>
         <option>무릉도원면</option><option>김삿갓면</option><option>산솔면</option><option>기타</option>
       </select>
       <div class="error-msg">출신 읍면동을 선택해 주세요.</div>
@@ -200,7 +200,8 @@ tr:hover td { background:var(--accent-pale); }
     </div>
     <div class="field">
       <label for="birth">생년월일 <span class="opt-tag">선택</span></label>
-      <input type="date" id="birth">
+      <input type="text" id="birth" placeholder="예: 19750315 또는 1975-03-15" maxlength="10">
+      <div class="field-hint">숫자로 입력해 주세요. 예) 19750315</div>
     </div>
 
     <div class="privacy-box">
@@ -258,7 +259,7 @@ tr:hover td { background:var(--accent-pale); }
         <select id="filterTown" onchange="renderTable()">
           <option value="">전체 읍면동</option>
           <option>영월읍</option><option>상동읍</option><option>한반도면</option>
-          <option>북면</option><option>남면</option><option>수주면</option>
+          <option>북면</option><option>남면</option><option>주천면</option>
           <option>무릉도원면</option><option>김삿갓면</option><option>산솔면</option><option>기타</option>
         </select>
       </div>
